@@ -26,9 +26,9 @@
 # Task: create a variable with your name and print out Hello <name>
 print("start of part 0") # set breakpoint here
 # ask for user input assign input to variable username
-username = input("Enter username:")
+name = input("Enter name:")
 # print hello with username
-print("Hello" + username)
+print("Hello" + name)
 
 
 print("end of 0") # set breakpoint here 
