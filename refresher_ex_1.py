@@ -121,6 +121,8 @@ ten = L[4][2]
 # using the variables above to generate [0,2,3,[5,6],8,10]
 N = [zero,two,three,listWithFiveAndSix,eight,ten]
 
+print(N)
+
 print("end of 1") # set breakpoint here 
 '''
 
