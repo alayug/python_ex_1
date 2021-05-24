@@ -110,8 +110,16 @@ print("Hello", name)
 print("start of part 1") # set breakpoint here
 L = [0, [], [1,2,3,4], [[5],[6,7]], [8,9,10]]
 print(L)
-# your code
+# creating variables with matching value
+zero = L[0]
+two = L[2][1]
+three = L[2][2]
+listWithFiveAndSix = [L[3][0][0],L[3][1][0]]
+eight = L[4][0]
+ten = L[4][2]
 
+# using the variables above to generate [0,2,3,[5,6],8,10]
+N = [zero,two,three,listWithFiveAndSix,eight,ten]
 
 print("end of 1") # set breakpoint here 
 '''
