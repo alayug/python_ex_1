@@ -25,7 +25,10 @@
 # breakpoint system works
 # Task: create a variable with your name and print out Hello <name>
 print("start of part 0") # set breakpoint here
-# your code here
+# ask for user input assign input to variable username
+username = input("Enter username:")
+# print hello with username
+print("Hello" + username)
 
 
 print("end of 0") # set breakpoint here 
