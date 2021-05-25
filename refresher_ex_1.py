@@ -28,7 +28,7 @@ print("start of part 0") # set breakpoint here
 # assign variable name with value of Aliana
 name = "Aliana"
 # print hello with Aliana
-print("Hello" + name)
+print("Hello " + name)
 
 print("end of 0") # set breakpoint here 
 '''
