@@ -30,7 +30,6 @@ name = "Aliana"
 # print hello with Aliana
 print("Hello" + name)
 
-
 print("end of 0") # set breakpoint here 
 '''
 
@@ -172,7 +171,16 @@ print(newL) # [0, 2, 3, [5, 6], 8, 10]
 #  Its language constructs and object-oriented approach aim to help programmers ...
 print("start of part 2") # set breakpoint here
 s = "Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects."
-# your code here
+
+# using split to break sentence up whenever it hits a period and put it in a list
+listWithSplitSentences = s.split('.')
+
+#using len method to get the length of the number of items in listWithSplitSentences
+print("there are", len(listWithSplitSentences), "sentences:")
+
+# using for loop to go through listWithSplitSentences and print each item out
+for sentence in listWithSplitSentences:
+    print(sentence)
 
 print("end of 2") # set breakpoint here 
 '''
