@@ -329,8 +329,23 @@ for w in words:
 print("start of part 4") # set breakpoint here
 s = "A very long description" # a long string
 filler = "..."
-# your code here
 
+# in a loop, set x from 5 to and to 15 - using range
+for x in range(5, 15):
+    # do check for whether or not abbreviated value is larger than s, if so, print s
+    # x is the number of characters before and after filler so add x * 2 with length of filler
+    lenghtOfAbbreviatedString =  x * 2 + len(filler)
+    lengthOfS = len(s)
+    if lenghtOfAbbreviatedString > lengthOfS:
+        print(s)
+    else:
+        # get string value before filler
+        stringBeforeFiller = s[0:x]
+        # get string value after filler
+        stringAfterFiller = s[x+len(filler): len(s)]
+        # combine stringBeforeFiller, filler, and stringAfterFiller to get the abbreviatedString
+        abbreviatedString = stringBeforeFiller + filler + stringAfterFiller 
+        print(abbreviatedString)
 
 print("end of 4") # set breakpoint here 
 '''
