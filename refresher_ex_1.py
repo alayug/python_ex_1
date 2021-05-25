@@ -233,8 +233,27 @@ for e in sentence_list:
 # programming
 # LANGUAGE
 print("start of part 3") # set breakpoint here
-# your code here
+s = "Python is an interpreted, high-level, general-purpose programming language."
 
+# put each word into a list using split
+wordList = s.split()
+
+# keeps track 
+numberOfWordsProcessed = 1
+
+for word in wordList:
+    # using replace to remove period and comma 
+    word = word.replace('.', '')
+    word = word.replace(',', '') 
+
+    #if numberOfWordsProcessed divided by 2 has a remainder of 0, make the word uppercase using upper() 
+    if numberOfWordsProcessed % 2 == 0:
+        print(word.upper())
+    else:
+        print(word)
+    
+    # increment numberOfWordsProcessed to prepare it for the next loop
+    numberOfWordsProcessed = numberOfWordsProcessed + 1
 
 print("end of 3") # set breakpoint here 
 '''
